@@ -9,7 +9,12 @@ function App() {
 
   const handleClick = () => {
     // count 0
+    console.log(count, "antes");
     setCount((count) => count + 1); // su valor en el proximo render es 1
+    //Esto solo establece el valor que tendra count en el prox render. setState No cambia inmediatamente el valor?
+
+    console.log(count, "despues")
+
     nose();
   };
 
