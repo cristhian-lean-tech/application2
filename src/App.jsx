@@ -1,29 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import Input from "./components/Input";
 // FLUX
 
 function App() {
-  console.log("******");
+  // console.log("**App**");
   const [count, setCount] = useState(0);
+  // useEffect
+  // useRef
 
   const handleClick = () => {
     // count 0
-    console.log(count, "antes");
+    // console.log(count, "antes");
     setCount((count) => count + 1); // su valor en el proximo render es 1
     //Esto solo establece el valor que tendra count en el prox render. setState No cambia inmediatamente el valor?
 
-    console.log(count, "despues")
+    // console.log(count, "despues");
 
     nose();
   };
 
   const nose = () => {
     // count 0
-    console.log("Valor", count); // ???
+    // console.log("Valor", count); // ???
   };
 
-  console.log("count: ", count);
+  // console.log("count: ", count);
   return (
     <div className="App">
       <div>
@@ -41,6 +44,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+      <Input />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
