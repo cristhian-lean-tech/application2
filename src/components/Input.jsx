@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-// const input = new Input()
-// heredando de Component
-// ciclos de vida
-// poco legible
+// const input = new Input (ok)
+// heredando de Component (ok)
+// ciclos de vida (ok)
+// poco legible (ok)
 
 export default class Input extends Component {
   // Propio this
